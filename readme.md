@@ -1,4 +1,8 @@
+
 # Python Backward Induction Overview
+
+This project was written as a (very hurried) introduction to python for those who
+understand how to make induction trees in Excel.  Look at the [Notebook](blob/main/backInductTree1.ipynb) to see how it's run.
 
 ## Python Basics
 
