@@ -3,30 +3,33 @@
 ## Python Basics
 
 - Anything that is imported is usually imported by a name and then accessed via name.
-    o _E.g.,_
+    - _E.g.,_
        import somePackage as sp
        sp.someFunction(3,2)
 - Indentation is what determines grouping
-    o This is true for loops, classes, functions, etc
+    - This is true for loops, classes, functions, etc
 - Python functions all start with keyword def _functionName_ followed by a list of parameters being
     passed in
-       o E.g.,
+       - E.g.,
+```
           def addTwoNumbers(alpha, beta):
           newValue = alpha + beta
           return newValue
-
+```
 ## Python Class Basics
 
 - Python class definitions start with the keyword _class_ and then lists the methods that are being
     defined.
-       o If a class derives from anther class, that base class functions are available to the upper
+       - If a class derives from anther class, that base class functions are available to the upper
           class.
-       o Sometimes we overwrite these classes
+       - Sometimes we overwrite these classes
 - Class method functions always have a reference to the object. This is always ‘self’
-    o _E.g.,_
+    - _E.g.,_
+```    
        class SomeClass(object):
        def sayHello(self):
        print(“hello!”)
+```
 
 ## Tree Induction Object Basics
 
@@ -41,16 +44,16 @@ In order to create a new type of tree, you need to do the following:
 The new tree node class has to derive from it.BaseTreeNode and needs two functions to be overwritten:
 
 - def updateLocal(self, info):
-    o Using the info passed in, updates any variables that depend on the nodes position in the
+    - Using the info passed in, updates any variables that depend on the nodes position in the
        tree. You can access
-          ▪ timestep
-          ▪ state (from 0 to timestep – 1)
-          ▪ stateInt – deviation from center ( 0 is center, 1 is one node up, -2 is two nodes
+          - timestep
+          - state (from 0 to timestep – 1)
+          - stateInt – deviation from center ( 0 is center, 1 is one node up, -2 is two nodes
              down) = (-timeStep) + 2 * (state)
 
 
 - def backInduct(self, info):
-    o Using the tree info and nextUpper node and nextLower node (if not isFinalNode),
+    0 Using the tree info and nextUpper node and nextLower node (if not isFinalNode),
        calculate anything needed using backward induction
 
 ### Tree Node Factory
@@ -71,7 +74,7 @@ To create a tree info class, you need to:
 
 - Create a set of default values. This is a dictionary.
 - Copy the def __init__ function changing the names as appropriate
-    o (This function is the constructor for this class. It’s ok if you don’t know what that means
+    - (This function is the constructor for this class. It’s ok if you don’t know what that means
        yet)
 - Create a calc() function that calculates any derived values.
 
