@@ -86,7 +86,7 @@ To create a tree info class, you need to:
 
 To use the tree,
 
-- Start your favorite python interpreter. I recommend using Jupyter notebooks.
+- Start your favorite python interpreter. I recommend using Jupyter notebooks to run  [this notebook](backInductTree1.ipynb).
 - Import your new file
 - Create a new info object from your new file
 - Create a tree using factory from file and new info object
